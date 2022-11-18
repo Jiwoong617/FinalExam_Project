@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public int speed;
+    public float speed;
     public int jump_force;
     float x; //이동 입력
     Rigidbody2D rigid;
@@ -18,6 +19,10 @@ public class Move : MonoBehaviour
 
     void Update()
     {
-        x = Input.GetAxis("Horizontal");
+        x = Input.GetAxisRaw("Horizontal");
+        transform.Translate(Vector2.right * x * speed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
     }
 }
