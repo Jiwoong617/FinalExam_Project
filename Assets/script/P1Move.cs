@@ -13,7 +13,7 @@ public class P1Move : MonoBehaviour
     void Start()
     {
         speed = 10;
-        jump_force = 5;
+        jump_force = 10;
         rigid = GetComponent<Rigidbody2D>();
     }
 
@@ -29,7 +29,7 @@ public class P1Move : MonoBehaviour
             x = Input.GetAxisRaw("Horizontal");
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && rigid.velocity.y == 0)
                 rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
         }
     }
