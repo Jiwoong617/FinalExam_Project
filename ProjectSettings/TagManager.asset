@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
-  tags:
-  - Arrow
-  - Stick
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - P1
-  - P2
-=======
-  - Player1
-  - Player2
-  - Land
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
->>>>>>> parent of 8b84782 (kjy)
-=======
   tags: []
->>>>>>> parent of 9a061ef (화살, 카메라)
   layers:
   - Default
   - TransparentFX

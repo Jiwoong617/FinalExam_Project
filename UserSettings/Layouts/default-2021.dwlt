@@ -19,24 +19,9 @@ MonoBehaviour:
     width: 1493.3334
     height: 850.6667
   m_ShowMode: 4
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Title: Game
-<<<<<<< HEAD
-  m_RootView: {fileID: 9}
-  m_MinSize: {x: 875, y: 300}
-=======
-  m_RootView: {fileID: 10}
-  m_MinSize: {x: 875, y: 350}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  m_Title: Scene
-=======
   m_Title: Project
->>>>>>> parent of 9a061ef (화살, 카메라)
-  m_RootView: {fileID: 10}
-  m_MinSize: {x: 875, y: 350}
->>>>>>> parent of 8b84782 (kjy)
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -47,375 +32,24 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-  m_Name: SceneView
-=======
-  m_Name: GameView
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-    width: 1286
-    height: 683
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &3
-=======
-    width: 576
-    height: 578
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 576
-    y: 0
-    width: 410.6667
-    height: 578
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-=======
-    x: 261.33334
-=======
-    x: 198
->>>>>>> parent of 9a061ef (화살, 카메라)
-    y: 0
-    width: 931.3334
-    height: 578
-<<<<<<< HEAD
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> parent of 8b84782 (kjy)
-=======
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
->>>>>>> parent of 9a061ef (화살, 카메라)
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
-<<<<<<< HEAD
---- !u!114 &4
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
---- !u!114 &3
->>>>>>> parent of 8b84782 (kjy)
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1286
-=======
-    x: 1000.6667
->>>>>>> parent of 8b84782 (kjy)
-=======
-    x: 1129.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
-    y: 0
-    width: 100
-    height: 578
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-=======
-    x: 986.6667
-    y: 0
-    width: 230.66669
-    height: 578
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &5
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 3}
-<<<<<<< HEAD
-=======
-  - {fileID: 4}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1544
-    height: 683
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
-=======
-    width: 1201.3334
-=======
-    width: 1229.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
-    height: 578
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 8096}
->>>>>>> parent of 8b84782 (kjy)
-  vertical: 0
-  controlID: 4967
---- !u!114 &5
-=======
-    width: 1217.3334
-    height: 578
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 8096}
-  vertical: 0
-  controlID: 79
---- !u!114 &6
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_Name: ConsoleWindow
-=======
-  m_Name: ProjectBrowser
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  m_Name: ProjectBrowser
->>>>>>> parent of 8b84782 (kjy)
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 683
-    width: 1544
-    height: 264
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
-=======
-    y: 578
-    width: 1229.3334
-    height: 222.66669
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
->>>>>>> parent of 8b84782 (kjy)
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &6
-=======
-    y: 578
-    width: 1217.3334
-    height: 222.66669
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 13}
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &7
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-<<<<<<< HEAD
-  - {fileID: 4}
-  - {fileID: 5}
-=======
-  - {fileID: 5}
-  - {fileID: 6}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 1544
-    height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
-=======
-    width: 1201.3334
-=======
-    width: 1229.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
-    height: 800.6667
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
->>>>>>> parent of 8b84782 (kjy)
-  vertical: 1
-  controlID: 4966
---- !u!114 &7
-=======
-    width: 1217.3334
-    height: 800.6667
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 1
-  controlID: 78
---- !u!114 &8
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 198
-    height: 578
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 6}
-<<<<<<< HEAD
-  - {fileID: 8}
-=======
-  - {fileID: 7}
   - {fileID: 9}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  - {fileID: 9}
->>>>>>> parent of 8b84782 (kjy)
+  - {fileID: 3}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 30
     width: 1493.3334
     height: 800.6667
-  m_MinSize: {x: 400, y: 200}
-  m_MaxSize: {x: 32384, y: 16192}
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  controlID: 83
---- !u!114 &8
-=======
-  controlID: 72
---- !u!114 &9
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  controlID: 71
-=======
-  controlID: 4965
->>>>>>> parent of 9a061ef (화살, 카메라)
---- !u!114 &9
->>>>>>> parent of 8b84782 (kjy)
+  controlID: 19
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -425,48 +59,76 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1544
-=======
-    x: 1201.3334
->>>>>>> parent of 8b84782 (kjy)
-=======
-    x: 1229.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
+    x: 1140.6666
     y: 0
-    width: 264
+    width: 352.66675
     height: 800.6667
-<<<<<<< HEAD
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-<<<<<<< HEAD
-  m_ActualView: {fileID: 13}
-=======
-    x: 1217.3334
-    y: 0
-    width: 276
-    height: 800.6667
-=======
->>>>>>> parent of 9a061ef (화살, 카메라)
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 282
+    height: 474.66666
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  m_ActualView: {fileID: 14}
->>>>>>> parent of 8b84782 (kjy)
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 474.66666
+    width: 1140.6666
+    height: 326.00003
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 12}
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -479,9 +141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 11}
+  - {fileID: 7}
+  - {fileID: 2}
   - {fileID: 8}
-  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -494,7 +156,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &11
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -516,7 +178,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &12
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -537,7 +199,84 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &13
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1140.6666
+    height: 800.6667
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 1
+  controlID: 20
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1140.6666
+    height: 474.66666
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 21
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 282
+    y: 0
+    width: 858.6666
+    height: 474.66666
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -558,21 +297,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 756
-    width: 1543
-    height: 243
-=======
-    y: 650.6667
-    width: 1216.3334
-    height: 201.66669
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    y: 650.6667
-    width: 1228.3334
-    height: 201.66669
->>>>>>> parent of 8b84782 (kjy)
+    y: 547.3334
+    width: 1139.6666
+    height: 305.00003
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -602,29 +329,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 14.333313}
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_SelectedIDs: ac5f0000
-    m_LastClickedID: 24492
-    m_ExpandedIDs: 00000000a65f000000ca9a3bffffff7f
-=======
-    m_SelectedIDs: e65f0000
-    m_LastClickedID: 24550
-    m_ExpandedIDs: 00000000ba5f0000bc5f000000ca9a3b
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    m_SelectedIDs: c85f0000
-    m_LastClickedID: 24520
-    m_ExpandedIDs: 000000009a5f00009c5f000000ca9a3b
->>>>>>> parent of 8b84782 (kjy)
-=======
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa5f0000
-    m_LastClickedID: 24490
-    m_ExpandedIDs: 00000000785f00007a5f000000ca9a3b
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_SelectedIDs: 905f0000
+    m_LastClickedID: 24464
+    m_ExpandedIDs: 00000000625f0000945f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,11 +348,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 6}
-=======
       m_ClientGUIView: {fileID: 0}
->>>>>>> parent of 9a061ef (화살, 카메라)
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -656,19 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000a65f0000
-=======
-    m_ExpandedIDs: 00000000ba5f0000bc5f0000
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    m_ExpandedIDs: 000000009a5f00009c5f0000
->>>>>>> parent of 8b84782 (kjy)
-=======
-    m_ExpandedIDs: 00000000785f00007a5f0000
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_ExpandedIDs: 00000000625f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -712,7 +404,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 6}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -723,8 +415,8 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 177
---- !u!114 &14
+  m_DirectoriesAreaWidth: 207
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -744,28 +436,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1544
-    y: 73
-    width: 375
-    height: 926
-=======
-    x: 1217.3334
+    x: 1140.6667
     y: 72.66667
-    width: 275
+    width: 351.66675
     height: 779.6667
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    x: 1201.3334
-=======
-    x: 1229.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
-    y: 72.66667
-    width: 263
-    height: 779.6667
->>>>>>> parent of 8b84782 (kjy)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -783,7 +457,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -803,28 +477,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1286
-    y: 73
-    width: 256
-    height: 662
-=======
-    x: 986.6667
+    x: 0
     y: 72.66667
-    width: 228.66669
-    height: 557
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    x: 1000.6667
-=======
-    x: 1129.3334
->>>>>>> parent of 9a061ef (화살, 카메라)
-    y: 72.66667
-    width: 98
-    height: 557
->>>>>>> parent of 8b84782 (kjy)
+    width: 281
+    height: 453.66666
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -832,21 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: e0210000
       m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_ExpandedIDs: 34faffff28fbffff
-=======
-      m_ExpandedIDs: 40dfffff2cfbffff305f00003c5f0000645f0000
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-      m_ExpandedIDs: 6e78ffff287affff2cfbffff205f0000265f0000485f0000
->>>>>>> parent of 8b84782 (kjy)
-=======
-      m_ExpandedIDs: 32c5ffffe2d8ffff2cfbffff1e5f0000
->>>>>>> parent of 9a061ef (화살, 카메라)
+      m_ExpandedIDs: fcfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -862,7 +506,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -870,7 +514,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -890,28 +534,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 0
-    y: 73
-    width: 1285
-    height: 662
-=======
-    x: 576
+    x: 282
     y: 72.66667
-    width: 408.6667
-    height: 557
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    x: 261.33334
-=======
-    x: 198
->>>>>>> parent of 9a061ef (화살, 카메라)
-    y: 72.66667
-    width: 929.3334
-    height: 557
->>>>>>> parent of 8b84782 (kjy)
+    width: 856.6666
+    height: 453.66666
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -921,21 +547,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-<<<<<<< HEAD
       snapOffset: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-      snapOffsetDelta: {x: -101, y: -26}
-=======
-      snapOffsetDelta: {x: -98.66666, y: -26}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
       snapOffsetDelta: {x: -98.66669, y: -26}
->>>>>>> parent of 8b84782 (kjy)
-=======
-      snapOffset: {x: -101, y: -26}
-      snapOffsetDelta: {x: 0, y: 0}
->>>>>>> parent of 9a061ef (화살, 카메라)
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -1000,7 +613,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 25.333334}
+      snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -1148,27 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: -58.904778, y: -4.472401, z: -0.38290706}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -58.904778, y: -4.472401, z: -0.38290706}
-=======
-    m_Target: {x: 12.509904, y: -5.72699, z: 1.5348727}
-    speed: 2
-    m_Value: {x: 12.509904, y: -5.72699, z: 1.5348727}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    m_Target: {x: -40.58639, y: -2.5976326, z: -1.1925136}
-    speed: 2
-    m_Value: {x: -41.329456, y: -3.168545, z: -1.1785306}
->>>>>>> parent of 8b84782 (kjy)
-=======
-    m_Target: {x: -15.839468, y: -0.7771749, z: -7.9640822}
-    speed: 2
-    m_Value: {x: -15.918194, y: -1.4313476, z: -7.949162}
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_Value: {x: 11.443957, y: 6.5441804, z: -0.091965824}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1199,7 +794,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1219,27 +814,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: 30.464113
+    m_Target: 10
     speed: 2
-    m_Value: 30.464113
-=======
-    m_Target: 46.786804
-    speed: 2
-    m_Value: 46.786804
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    m_Target: 32.47153
-    speed: 2
-    m_Value: 31.073235
->>>>>>> parent of 8b84782 (kjy)
-=======
-    m_Target: 34.648483
-    speed: 2
-    m_Value: 33.156445
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_Value: 19.19654
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1257,26 +834,14 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
-=======
-  m_LastSceneViewRotation: {x: -0.14865285, y: 0.655297, z: -0.13372897, w: -0.728427}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  m_LastSceneViewRotation: {x: -0.36718714, y: 0.49313915, z: -0.24114595, w: -0.7508923}
->>>>>>> parent of 8b84782 (kjy)
-=======
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
->>>>>>> parent of 9a061ef (화살, 카메라)
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1296,22 +861,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 73
-    width: 1285
-    height: 662
-=======
-    y: 72.66667
-    width: 575
-    height: 557
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    y: 72.66667
-    width: 197
-    height: 557
->>>>>>> parent of 8b84782 (kjy)
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1322,58 +875,25 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_TargetSize: {x: 1140, y: 641}
-=======
-  m_TargetSize: {x: 575, y: 323}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-  m_TargetSize: {x: 260.33334, y: 146}
->>>>>>> parent of 8b84782 (kjy)
-=======
-  m_TargetSize: {x: 197, y: 111}
->>>>>>> parent of 9a061ef (화살, 카메라)
+  m_TargetSize: {x: 1532, y: 769}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
+  m_RenderIMGUI: 0
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_HBaseRangeMin: -570
-    m_HBaseRangeMax: 570
-    m_VBaseRangeMin: -320.5
-    m_VBaseRangeMax: 320.5
-=======
-    m_HBaseRangeMin: -191.66667
-    m_HBaseRangeMax: 191.66667
-    m_VBaseRangeMin: -107.66667
-    m_VBaseRangeMax: 107.66667
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-    m_HBaseRangeMin: -86.77779
-    m_HBaseRangeMax: 86.77779
-    m_VBaseRangeMin: -48.666668
-    m_VBaseRangeMax: 48.666668
->>>>>>> parent of 8b84782 (kjy)
-=======
-    m_HBaseRangeMin: -65.66667
-    m_HBaseRangeMax: 65.66667
-    m_VBaseRangeMin: -37
-    m_VBaseRangeMax: 37
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_HBaseRangeMin: -510.6667
+    m_HBaseRangeMax: 510.6667
+    m_VBaseRangeMin: -256.33334
+    m_VBaseRangeMax: 256.33334
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1391,80 +911,29 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      width: 1285
-      height: 641
+      width: 1532
+      height: 769
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 642.5, y: 320.5}
-=======
-      width: 575
-      height: 536
-    m_Scale: {x: 1.3270816, y: 1.3270814}
-    m_Translation: {x: 287.5, y: 268}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-      width: 260.33334
-      height: 536
-    m_Scale: {x: 1.2989118, y: 1.2989119}
-    m_Translation: {x: 130.16667, y: 268}
->>>>>>> parent of 8b84782 (kjy)
-=======
-      width: 197
-      height: 536
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 98.5, y: 268}
->>>>>>> parent of 9a061ef (화살, 카메라)
+    m_Translation: {x: 766, y: 384.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      x: -642.5
-      y: -320.5
-      width: 1285
-      height: 641
+      x: -766
+      y: -384.5
+      width: 1532
+      height: 769
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1285, y: 662}
-=======
-      x: -216.6408
-      y: -201.94691
-      width: 433.2816
-      height: 403.89383
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 862.5, y: 835.5}
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
-      x: -100.2121
-      y: -206.32654
-      width: 200.4242
-      height: 412.65308
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 390.5, y: 835.5}
->>>>>>> parent of 8b84782 (kjy)
-=======
-      x: -98.5
-      y: -268
-      width: 197
-      height: 536
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 295.5, y: 835.5}
->>>>>>> parent of 9a061ef (화살, 카메라)
+  m_LastWindowPixelSize: {x: 2298, y: 1185}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1484,10 +953,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 650.6667
-    width: 1228.3334
-    height: 201.66669
+    x: 2249
+    y: 726.5
+    width: 920
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
