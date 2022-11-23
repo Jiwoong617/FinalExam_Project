@@ -6,8 +6,14 @@ TagManager:
   tags:
   - Arrow
   - Stick
+<<<<<<< HEAD
   - P1
   - P2
+=======
+  - Player1
+  - Player2
+  - Land
+>>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
   layers:
   - Default
   - TransparentFX

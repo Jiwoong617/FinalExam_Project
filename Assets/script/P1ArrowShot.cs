@@ -10,8 +10,8 @@ public class P1ArrowShot : MonoBehaviour
     private float power; //발사힘
 
     private bool click = false;
-    private float startpos; //마우스 클릭 위치
-    private float endpos; //마우스 뗀 위치
+    Vector2 startpos; //마우스 클릭 위치
+    Vector2 endpos; //마우스 뗀 위치
 
     void Update()
     {
@@ -24,7 +24,7 @@ public class P1ArrowShot : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+            startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             click = true;
         }
 
@@ -38,9 +38,9 @@ public class P1ArrowShot : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+            endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //Debug.Log(endpos + "" + startpos);
-            power = Math.Abs(endpos-startpos)*5;
+            power = (endpos-startpos).magnitude*5;
 
             fire();
             click = false;
@@ -53,7 +53,7 @@ public class P1ArrowShot : MonoBehaviour
 
     void fire()
     {
-        GameObject firearrow = Instantiate(arrow, bow.position, bow.rotation);
+        GameObject firearrow = Instantiate(arrow, new Vector3(bow.position.x, bow.position.y, 10), bow.rotation);
         firearrow.GetComponent<Rigidbody2D>().velocity = firearrow.transform.right * power;
     }
 }

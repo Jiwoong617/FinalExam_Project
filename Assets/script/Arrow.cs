@@ -16,35 +16,83 @@ public class Arrow : MonoBehaviour
     {
         if(rotate)
             transform.right = GetComponent<Rigidbody2D>().velocity;
+
+        destroyArrow();
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //몸 박히면 피 다는 구현
+        if (GameManager.instance.player1)
+        {
+            if (collision.tag == "Player2")
+                GameManager.instance.hpDecrease(2);
+        }
+        else if (GameManager.instance.player2)
+        {
+            if (collision.tag == "Player1")
+                GameManager.instance.hpDecrease(1);
+        }
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (GameManager.instance.player1)
         {
+            if(collision.tag == "Player2" || collision.tag == "Land")
+            {
+                stuckArrow();
+                transform.SetParent(collision.transform); // 몸에 화살 박히는거
+            }
             GameManager.instance.player1 = false;
             GameManager.instance.player2 = true;
         }
         else if (GameManager.instance.player2)
         {
+            if (collision.tag == "Player1" || collision.tag == "Land")
+            {
+                stuckArrow();
+                transform.SetParent(collision.transform);
+            }
             GameManager.instance.player2 = false;
             GameManager.instance.player1 = true;
         }
 
-        rb.isKinematic = true; //화살 고정
-        rotate = false; //회전 고정
-        rb.velocity = Vector2.zero; //속도 삭제
-        Invoke("wait", 1);
+
     }
 
     private void wait()
     {
         GameManager.instance.followingArrow = false;
         gameObject.tag = "Stick";
+    }
+
+    private void stuckArrow()
+    {
+        rb.isKinematic = true; //화살 고정
+        rotate = false; //회전 고정
+        rb.velocity = Vector2.zero; //속도 삭제
+
+        Invoke("wait", 1);
+    }
+
+    private void destroyArrow()
+    {
+        if(transform.position.y < -20f)
+        {
+            if (GameManager.instance.player1)
+            {
+                GameManager.instance.player1 = false;
+                GameManager.instance.player2 = true;
+            }
+            else if (GameManager.instance.player2)
+            {
+                GameManager.instance.player2 = false;
+                GameManager.instance.player1 = true;
+            }
+
+            GameManager.instance.followingArrow = false;
+            Destroy(gameObject);
+        }
     }
 }
