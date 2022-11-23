@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -38,10 +39,7 @@ public class GameManager : MonoBehaviour
     {
         
     }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
     public void hpDecrease(int who)
     {
         if (who == 1)
@@ -49,7 +47,4 @@ public class GameManager : MonoBehaviour
         else
             hp2.fillAmount -= 0.25f;
     }
->>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
-=======
->>>>>>> parent of 8b84782 (kjy)
 }

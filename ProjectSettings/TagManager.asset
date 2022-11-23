@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Arrow
+  - Stick
+  - Player1
+  - Player2
+  - Land
   layers:
   - Default
   - TransparentFX
