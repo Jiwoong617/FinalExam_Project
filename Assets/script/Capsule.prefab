@@ -107,6 +107,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Image&Prefab/arrow.prefab
 --- !u!61 &2349423286299071922
 BoxCollider2D:
@@ -138,6 +139,9 @@ BoxCollider2D:
 =======
 --- !u!114 &-4289566386634530169
 >>>>>>> parent of 9a061ef (화살, 카메라):Assets/script/Capsule.prefab
+=======
+--- !u!114 &-4289566386634530169
+>>>>>>> parent of 9a061ef (화살, 카메라)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
