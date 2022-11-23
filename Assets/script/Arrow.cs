@@ -39,21 +39,27 @@ public class Arrow : MonoBehaviour
     {
         if (GameManager.instance.player1)
         {
-            if(collision.tag == "Player2" || collision.tag == "Land")
+            if (collision.tag == "Player2")
             {
                 stuckArrow();
                 transform.SetParent(collision.transform); // 몸에 화살 박히는거
             }
+            else if (collision.tag == "Land")
+                stuckArrow();
+
             GameManager.instance.player1 = false;
             GameManager.instance.player2 = true;
         }
         else if (GameManager.instance.player2)
         {
-            if (collision.tag == "Player1" || collision.tag == "Land")
+            if (collision.tag == "Player1")
             {
                 stuckArrow();
-                transform.SetParent(collision.transform);
+                transform.SetParent(collision.transform); // 몸에 화살 박히는거
             }
+            else if (collision.tag == "Land")
+                stuckArrow();
+
             GameManager.instance.player2 = false;
             GameManager.instance.player1 = true;
         }
