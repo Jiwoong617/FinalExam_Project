@@ -53,7 +53,7 @@ public class P1ArrowShot : MonoBehaviour
 
     void fire()
     {
-        GameObject firearrow = Instantiate(arrow, bow.position, bow.rotation);
+        GameObject firearrow = Instantiate(arrow, new Vector3(bow.position.x, bow.position.y, 10), bow.rotation);
         firearrow.GetComponent<Rigidbody2D>().velocity = firearrow.transform.right * power;
     }
 }

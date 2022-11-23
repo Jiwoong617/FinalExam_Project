@@ -20,6 +20,7 @@ public class P2Move : MonoBehaviour
     void Update()
     {
         Moving();
+        Die();
     }
 
     void Moving()
@@ -32,5 +33,11 @@ public class P2Move : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) && rigid.velocity.y == 0)
                 rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
         }
+    }
+
+    void Die()
+    {
+        if (GameManager.instance.hp2.fillAmount <= 0)
+            Destroy(gameObject);
     }
 }

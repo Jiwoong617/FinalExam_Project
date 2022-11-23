@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Arrow
   - Stick
+  - Player1
+  - Player2
+  - Land
   layers:
   - Default
   - TransparentFX
