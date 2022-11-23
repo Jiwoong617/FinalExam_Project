@@ -7,6 +7,7 @@ TagManager:
   - Arrow
   - Stick
 <<<<<<< HEAD
+<<<<<<< HEAD
   - P1
   - P2
 =======
@@ -14,6 +15,8 @@ TagManager:
   - Player2
   - Land
 >>>>>>> 968046f25c1f48e5aad53b00e0ce805bf5b34811
+=======
+>>>>>>> parent of 8b84782 (kjy)
   layers:
   - Default
   - TransparentFX

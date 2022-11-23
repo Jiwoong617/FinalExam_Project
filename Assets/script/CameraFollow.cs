@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.UI;
 
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] GameObject p1;
     [SerializeField] GameObject p2;
     private GameObject arrow;
-
-    
     private void Update()
     {
         following();
@@ -23,8 +20,6 @@ public class CameraFollow : MonoBehaviour
             Vector2 arrowPos = arrow.transform.position;
             transform.position = new Vector3(arrowPos.x, arrowPos.y, -10);
             //Debug.Log("Arrow");
-
-
         }
         else if (GameManager.instance.player1) // p1 따라가기
         {
