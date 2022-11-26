@@ -10,7 +10,7 @@ public class P1Move : MonoBehaviour
     float x; //이동 입력
     Rigidbody2D rigid;
 
-    Animator animator;
+    public Animator animator;
 
     void Start()
     {
@@ -23,6 +23,7 @@ public class P1Move : MonoBehaviour
     {
         Moving();
         Die();
+        animator.SetFloat("speed", Mathf.Abs(x));
     }
 
     void Moving()
