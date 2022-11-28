@@ -23,15 +23,16 @@ public class P1Move : MonoBehaviour
     {
         Moving();
         Die();
-        animator.SetFloat("speed", Mathf.Abs(x));
     }
 
     void Moving()
     {
         if (GameManager.instance.player1)
         {
-            x = Input.GetAxisRaw("Horizontal");
+            x = Input.GetAxisRaw("Horizontal"); 
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
+            animator.SetFloat("speed", Mathf.Abs(x));
+
             //Debug.Log(x);
             if (x != 0)
             {

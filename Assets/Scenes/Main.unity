@@ -1290,7 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f01afc33bdff02b43b8131a36fc06f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 727964542536981133, guid: 874936f6e1b7fdb42b484bd4ed499313, type: 3}
+  arrow: {fileID: 727964542536981133, guid: 0cfe08e9a2c0dcc48b7da028aa78c41a, type: 3}
   bow: {fileID: 772722766}
 --- !u!1 &570626034
 GameObject:
