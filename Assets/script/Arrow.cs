@@ -45,6 +45,8 @@ public class Arrow : MonoBehaviour
     {
         GameManager.instance.followingArrow = false;
         gameObject.tag = "Stick";
+
+        GetComponent<Collider2D>().enabled = false;
     }
 
     private void stuckArrow()

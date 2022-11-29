@@ -9,11 +9,13 @@ public class P2Move : MonoBehaviour
     public int jump_force;
     float x; //이동 입력
     Rigidbody2D rigid;
+    private bool canjump;
 
     void Start()
     {
         speed = 10;
         jump_force = 10;
+        canjump = true;
         rigid = GetComponent<Rigidbody2D>();
     }
 
@@ -30,9 +32,18 @@ public class P2Move : MonoBehaviour
             x = Input.GetAxisRaw("Horizontal");
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
 
-            if (Input.GetKeyDown(KeyCode.Space) && rigid.velocity.y == 0)
+            if (Input.GetKeyDown(KeyCode.Space) && canjump)
+            {
                 rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
+                canjump = false;
+            }
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Land")
+            canjump = true;
     }
 
     void Die()
