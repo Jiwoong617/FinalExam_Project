@@ -31,8 +31,8 @@ public class GameManager : MonoBehaviour
     public Image hp2;
     void Start()
     {
-        hp1.fillAmount = 0.25f;
-        hp2.fillAmount = 0.25f;
+        hp1.fillAmount = 1;
+        hp2.fillAmount = 1;
     }
 
     void Update()
