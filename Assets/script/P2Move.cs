@@ -11,6 +11,8 @@ public class P2Move : MonoBehaviour
     Rigidbody2D rigid;
     private bool canjump;
 
+    public Animator animator;
+
     void Start()
     {
         speed = 10;
@@ -31,7 +33,12 @@ public class P2Move : MonoBehaviour
         {
             x = Input.GetAxisRaw("Horizontal");
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
+            animator.SetFloat("speed", Mathf.Abs(x));
 
+            if (x != 0)
+            {
+                transform.localScale = new Vector3(x * 4.2f, 4.2f, 1);
+            }
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
                 rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
