@@ -45,6 +45,8 @@ public class P2Move : MonoBehaviour
                 canjump = false;
             }
         }
+        else
+            animator.SetFloat("speed", 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -31,7 +31,7 @@ public class P1Move : MonoBehaviour
     {
         if (GameManager.instance.player1)
         {
-            x = Input.GetAxisRaw("Horizontal"); 
+            x = Input.GetAxisRaw("Horizontal");
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
             animator.SetFloat("speed", Mathf.Abs(x));
 
@@ -47,6 +47,8 @@ public class P1Move : MonoBehaviour
                 canjump = false;
             }
         }
+        else
+            animator.SetFloat("speed", 0);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
