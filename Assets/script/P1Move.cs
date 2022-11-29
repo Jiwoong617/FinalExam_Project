@@ -10,7 +10,8 @@ public class P1Move : MonoBehaviour
     float x; //이동 입력
     Rigidbody2D rigid;
     private bool canjump;
-
+    public GameObject dieEffect;
+    public Transform bow; //활 위치
     public Animator animator;
 
     void Start()
@@ -39,12 +40,22 @@ public class P1Move : MonoBehaviour
             if (x != 0)
             {
                 transform.localScale = new Vector3(x*2.5f,2.5f,1);
+                bow.transform.localScale = new Vector3(x,1,1);
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
                 rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
                 canjump = false;
+                
+            }
+            if (!canjump)
+            {
+                animator.SetBool("jumpAnim", true);
+            }
+            else
+            {
+                animator.SetBool("jumpAnim", false);
             }
         }
         else
@@ -60,6 +71,11 @@ public class P1Move : MonoBehaviour
     void Die()
     {
         if (GameManager.instance.hp1.fillAmount <= 0)
+        {
+            dieEffect.gameObject.SetActive(true);
+            dieEffect.transform.position = this.transform.position;
+            this.gameObject.SetActive(false);
             Destroy(gameObject);
+        }
     }
 }

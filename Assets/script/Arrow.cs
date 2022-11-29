@@ -37,6 +37,7 @@ public class Arrow : MonoBehaviour
         else if (collision.tag == "Land")
             stuckArrow();
 
+
         GameManager.instance.player1 = false;
         GameManager.instance.player2 = true;
     }
