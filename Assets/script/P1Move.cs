@@ -11,7 +11,7 @@ public class P1Move : MonoBehaviour
     Rigidbody2D rigid;
     private bool canjump;
     public GameObject dieEffect;
-    public Transform bow; //È° À§Ä¡
+    public Transform bow;
     public Animator animator;
 
     void Start()
@@ -40,7 +40,7 @@ public class P1Move : MonoBehaviour
             if (x != 0)
             {
                 transform.localScale = new Vector3(x*2.5f,2.5f,1);
-                //bow.transform.localScale = new Vector3(x,1,1);
+                bow.transform.localScale = new Vector3(x,1,1);
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
