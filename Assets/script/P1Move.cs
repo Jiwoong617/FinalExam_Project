@@ -17,7 +17,7 @@ public class P1Move : MonoBehaviour
     void Start()
     {
         speed = 10;
-        jump_force = 10;
+        jump_force = 12;
         canjump = true;
         rigid = GetComponent<Rigidbody2D>();
     }
@@ -40,26 +40,26 @@ public class P1Move : MonoBehaviour
             if (x != 0)
             {
                 transform.localScale = new Vector3(x*2.5f,2.5f,1);
-                bow.transform.localScale = new Vector3(x,1,1);
+                //bow.transform.localScale = new Vector3(x,1,1);
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
-                rigid.AddForce(Vector2.up * jump_force, ForceMode2D.Impulse);
+                rigid.velocity = Vector2.up * jump_force;
                 canjump = false;
-                
             }
-            if (!canjump)
-            {
+
+            if (rigid.velocity.y != 0)
                 animator.SetBool("jumpAnim", true);
-            }
             else
-            {
                 animator.SetBool("jumpAnim", false);
-            }
+
         }
         else
+        {
             animator.SetFloat("speed", 0);
+            animator.SetBool("jumpAnim", false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

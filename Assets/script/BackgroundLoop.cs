@@ -29,7 +29,7 @@ public class BackgroundLoop : MonoBehaviour
     private void Reposition()
     {
         //Vector2 offset = new Vector2(width * 2f+spawnPoint, 0);
-        Vector3 offset = new Vector3(spawnPoint,15, 0);
+        Vector3 offset = new Vector3(spawnPoint,25, 0);
         transform.position = offset;
     }
 }

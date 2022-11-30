@@ -23,12 +23,12 @@ public class CameraFollow : MonoBehaviour
         }
         else if (GameManager.instance.player1) // p1 따라가기
         {
-            transform.position = new Vector3(p1.transform.position.x, p1.transform.position.y, -10);
+            transform.position = new Vector3(p1.transform.position.x, p1.transform.position.y + 4f, -10);
             //Debug.Log(1);
         }
         else if (GameManager.instance.player2) // p2 따라가기
         {
-            transform.position = new Vector3(p2.transform.position.x, p2.transform.position.y, -10);
+            transform.position = new Vector3(p2.transform.position.x, p2.transform.position.y + 4f, -10);
             //Debug.Log(2);
         }
 
