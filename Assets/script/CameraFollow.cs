@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -7,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] GameObject p1;
     [SerializeField] GameObject p2;
     private GameObject arrow;
-    private void Update()
+    private void LateUpdate()
     {
         following();
     }
