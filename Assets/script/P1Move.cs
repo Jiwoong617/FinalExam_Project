@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class P1Move : MonoBehaviour
 {
@@ -76,7 +77,12 @@ public class P1Move : MonoBehaviour
             dieEffect.gameObject.SetActive(true);
             dieEffect.transform.position = this.transform.position;
             this.gameObject.SetActive(false);
-            Destroy(gameObject);
+            Invoke("SceneChange", 1f);
+            //Destroy(gameObject);
         }
+    }
+    private void SceneChange()
+    {
+        SceneManager.LoadScene("P2GameOver");
     }
 }

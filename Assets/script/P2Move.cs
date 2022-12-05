@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class P2Move : MonoBehaviour
@@ -14,6 +15,8 @@ public class P2Move : MonoBehaviour
     public GameObject dieEffect;
     public Transform bow; //활 위치
     public Animator animator;
+    public AudioSource walkSound;
+    bool iswalking = false;
 
     void Start()
     {
@@ -27,6 +30,7 @@ public class P2Move : MonoBehaviour
     {
         Moving();
         Die();
+        walkSound = GetComponent<AudioSource>();
     }
 
     void Moving()
@@ -41,7 +45,21 @@ public class P2Move : MonoBehaviour
             {
                 transform.localScale = new Vector3(x * 4.2f, 4.2f, 1);
                 bow.transform.localScale = new Vector3(x, 1, 1);
+                iswalking = true;
             }
+            else
+            {
+                iswalking = false;
+            }
+            // 걷기 소리
+            if (iswalking)
+            {
+                if(!walkSound.isPlaying)
+                {
+                    walkSound.Play();
+                }
+            }
+            
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
                 rigid.velocity = Vector2.up * jump_force;
@@ -73,9 +91,13 @@ public class P2Move : MonoBehaviour
             dieEffect.gameObject.SetActive(true);
             dieEffect.transform.position = this.transform.position;
             this.gameObject.SetActive(false);
-            Destroy(gameObject);
-            
+            Invoke("SceneChange", 1f);
+            //Destroy(gameObject);
         }
             
+    }
+    private void SceneChange()
+    {
+        SceneManager.LoadScene("P1GameOver");
     }
 }
