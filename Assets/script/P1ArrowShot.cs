@@ -13,6 +13,12 @@ public class P1ArrowShot : MonoBehaviour
     Vector2 startpos; //마우스 클릭 위치
     Vector2 endpos; //마우스 뗀 위치
 
+    private AudioSource audios;
+
+    private void Start()
+    {
+        audios = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if(GameManager.instance.player1)
@@ -53,6 +59,8 @@ public class P1ArrowShot : MonoBehaviour
 
     void fire()
     {
+        audios.Play();
+
         GameObject firearrow = Instantiate(arrow, new Vector3(bow.position.x, bow.position.y, 3), bow.rotation);
         firearrow.GetComponent<Rigidbody2D>().velocity = firearrow.transform.right * power*0.75f;
     }

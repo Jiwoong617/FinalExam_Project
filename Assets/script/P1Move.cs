@@ -9,6 +9,7 @@ public class P1Move : MonoBehaviour
     public int jump_force;
     float x; //이동 입력
     Rigidbody2D rigid;
+
     private bool canjump;
     public GameObject dieEffect;
     public Transform bow;

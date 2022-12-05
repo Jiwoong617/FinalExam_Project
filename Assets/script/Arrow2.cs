@@ -7,10 +7,13 @@ public class Arrow2 : MonoBehaviour
     Rigidbody2D rb;
     bool rotate;
 
+    private AudioSource audios;
+
     private void Start()
     {
         rotate = true;
         rb = GetComponent<Rigidbody2D>();
+        audios = GetComponent<AudioSource>();
     }
     void Update()
     {
@@ -24,8 +27,11 @@ public class Arrow2 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player1")
+        {
             GameManager.instance.hpDecrease(1);
-
+            GetComponent<ParticleSystem>().Play();
+            audios.Play();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
