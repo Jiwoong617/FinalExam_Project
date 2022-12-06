@@ -15,6 +15,8 @@ public class P1Move : MonoBehaviour
     public GameObject dieEffect;
     public Transform bow;
     public Animator animator;
+    public AudioSource walkSound;
+    bool iswalking = false;
 
     void Start()
     {
@@ -22,6 +24,7 @@ public class P1Move : MonoBehaviour
         jump_force = 12;
         canjump = true;
         rigid = GetComponent<Rigidbody2D>();
+        walkSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -43,6 +46,23 @@ public class P1Move : MonoBehaviour
             {
                 transform.localScale = new Vector3(x*2.5f,2.5f,1);
                 bow.transform.localScale = new Vector3(x,1,1);
+                iswalking = true;
+            }
+            else
+            {
+                iswalking = false;
+            }
+            // °È±â ¼Ò¸®
+            if (iswalking)
+            {
+                if (!walkSound.isPlaying)
+                {
+                    walkSound.Play();
+                }
+            }
+            else
+            {
+                walkSound.Stop();
             }
 
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
@@ -52,13 +72,18 @@ public class P1Move : MonoBehaviour
             }
 
             if (rigid.velocity.y != 0)
+            {
+                walkSound.Stop();
                 animator.SetBool("jumpAnim", true);
+            }
+                
             else
                 animator.SetBool("jumpAnim", false);
 
         }
         else
         {
+            walkSound.Stop();
             animator.SetFloat("speed", 0);
             animator.SetBool("jumpAnim", false);
         }

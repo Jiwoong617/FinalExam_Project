@@ -24,13 +24,14 @@ public class P2Move : MonoBehaviour
         jump_force = 12;
         canjump = true;
         rigid = GetComponent<Rigidbody2D>();
+        walkSound = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         Moving();
         Die();
-        walkSound = GetComponent<AudioSource>();
+        
     }
 
     void Moving()
@@ -59,6 +60,10 @@ public class P2Move : MonoBehaviour
                     walkSound.Play();
                 }
             }
+            else
+            {
+                walkSound.Stop();
+            }
             
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
@@ -67,12 +72,16 @@ public class P2Move : MonoBehaviour
             }
 
             if (rigid.velocity.y != 0)
+            {
+                walkSound.Stop();
                 animator.SetBool("jumpAnim", true);
+            }
             else
                 animator.SetBool("jumpAnim", false);
         }
         else
         {
+            walkSound.Stop();
             animator.SetFloat("speed", 0);
             animator.SetBool("jumpAnim", false);
         }
