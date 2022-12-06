@@ -16,6 +16,7 @@ public class P2Move : MonoBehaviour
     public Transform bow; //È° À§Ä¡
     public Animator animator;
     public AudioSource walkSound;
+    public AudioSource jumpSound;
     bool iswalking = false;
 
     void Start()
@@ -67,6 +68,7 @@ public class P2Move : MonoBehaviour
             
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
+                jumpSound.Play();
                 rigid.velocity = Vector2.up * jump_force;
                 canjump = false;
             }
