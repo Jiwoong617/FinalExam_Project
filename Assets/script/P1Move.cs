@@ -9,23 +9,28 @@ public class P1Move : MonoBehaviour
     public float speed;
     public int jump_force;
     float x; //이동 입력
-    Rigidbody2D rigid;
+    private Rigidbody2D rigid;
 
     private bool canjump;
     public GameObject dieEffect;
+    [SerializeField]
     public Transform bow;
-    public Animator animator;
-    public AudioSource walkSound;
-    public AudioSource jumpSound;
+
+    private Animator animator;
+
+    private AudioSource audios;
+    public AudioClip jumpSound;
+    public AudioClip walkSound;
     bool iswalking = false;
 
     void Start()
     {
         speed = 10;
-        jump_force = 12;
+        jump_force = 20;
         canjump = true;
         rigid = GetComponent<Rigidbody2D>();
-        walkSound = GetComponent<AudioSource>();
+        audios = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -38,55 +43,48 @@ public class P1Move : MonoBehaviour
     {
         if (GameManager.instance.player1)
         {
+            //이동
             x = Input.GetAxisRaw("Horizontal");
             transform.Translate(Vector2.right * x * speed * Time.deltaTime);
             animator.SetFloat("speed", Mathf.Abs(x));
 
-            //Debug.Log(x);
+            //걷기 애니
             if (x != 0)
             {
-                transform.localScale = new Vector3(x*2.5f,2.5f,1);
-                bow.transform.localScale = new Vector3(x,1,1);
+                transform.localScale = new Vector3(x * 2.5f, 2.5f, 1);
+                bow.transform.localScale = new Vector3(x, 1, 1);
                 iswalking = true;
             }
-            else
-            {
-                iswalking = false;
-            }
-            // 걷기 소리
-            if (iswalking)
-            {
-                if (!walkSound.isPlaying)
-                {
-                    walkSound.Play();
-                }
-            }
-            else
-            {
-                walkSound.Stop();
-            }
+            else iswalking = false;
 
+            //점프
             if (Input.GetKeyDown(KeyCode.Space) && canjump)
             {
-                jumpSound.Play();
+                audios.PlayOneShot(jumpSound);
                 rigid.velocity = Vector2.up * jump_force;
                 canjump = false;
             }
 
+            // y속도로 점프 애니/소리
             if (rigid.velocity.y != 0)
             {
-                walkSound.Stop();
+                audios.clip = null;
                 animator.SetBool("jumpAnim", true);
-                
             }
-                
             else
                 animator.SetBool("jumpAnim", false);
 
+            //걷고있을 때 소리
+            if (iswalking)
+            {
+                if (!audios.isPlaying)
+                    audios.Play();
+            }
+            else
+                audios.Stop();
         }
         else
         {
-            walkSound.Stop();
             animator.SetFloat("speed", 0);
             animator.SetBool("jumpAnim", false);
         }
@@ -94,6 +92,7 @@ public class P1Move : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        audios.clip = walkSound;
         if (collision.gameObject.tag == "Land")
             canjump = true;
     }
