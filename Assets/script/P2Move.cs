@@ -6,25 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class P2Move : MonoBehaviour
 {
-    public float speed;
-    public int jump_force;
-    float x; //이동 입력
+    public float speed; //이동 속도
+    public int jump_force; //점프 높이
+    float x; //이동 입력 x축
     private Rigidbody2D rigid;
 
-    private bool canjump;
-    public GameObject dieEffect;
+    private bool canjump; //뛸 수 있는지
+    public GameObject dieEffect; //죽는 애니가 담긴 오브젝트
     [SerializeField]
-    public Transform bow;
+    private Transform bow; //화살 오브젝트
 
     private Animator animator;
 
-    private AudioSource audios;
-    public AudioClip jumpSound;
-    public AudioClip walkSound;
-    bool iswalking = false;
+    private AudioSource audios; //오디오 컨트롤러
+    public AudioClip jumpSound; //점프 소리
+    public AudioClip walkSound; //걷는 소리
+    bool iswalking = false; //걷고 있는지, 사운드 출력용 bool값
 
     void Start()
     {
+        //초기값 세팅
         speed = 10;
         jump_force = 20;
         canjump = true;

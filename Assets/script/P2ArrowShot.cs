@@ -7,9 +7,10 @@ public class P2ArrowShot : MonoBehaviour
 {
     public GameObject arrow; //생성할 화살
     public Transform bow; //활 위치
-    private float power; //발사힘
 
+    private float power; //발사힘
     private bool click = false;
+
     Vector2 startpos; //마우스 클릭 위치
     Vector2 endpos; //마우스 뗀 위치
 
